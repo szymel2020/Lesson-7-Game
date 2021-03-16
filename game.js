@@ -1,7 +1,7 @@
 //tworzenie funkcji anonimowej przypisanej do zmiennej 'wybieranie'
 const wybieranie = function () {
 	// utworzenie tablicy
-	var tablica = ['A', 'X', 'C', 'Y', 'B',  'E', 'S', 'T', 'O'];
+	var tablica = [ 'C', 'Y', 'B', ];
 	var tgu = document.getElementById("numer").innerHTML = tablica[Math.random() * tablica.length << 0];
 	if (tgu == 'B') {
 		document.getElementById('numer').style.backgroundColor = 'red';
@@ -10,7 +10,10 @@ const wybieranie = function () {
 	} else if(tgu == 'C') {
 		document.getElementById('numer').style.backgroundColor = 'yellow';
 		document.getElementById('numer').style.color = 'black';
-	};
+	} else if(tgu == 'Y') {
+		document.getElementById('numer').style.backgroundColor = 'black';
+		document.getElementById('numer').style.color = 'orange';
+};
 }
 const kulka = document.querySelector("#numer");
 kulka.addEventListener("click", wybieranie);
@@ -18,7 +21,7 @@ kulka.addEventListener("click", wybieranie);
 const wybieranie1 = function () {
 	//utworzenie elementu 'div'
 
-	var tablica = ['A', 'X', 'C', 'Y', 'B',  'E', 'S', 'T', 'O'];
+	var tablica = ['A', 'E', 'O'];
 	var tgu = document.getElementById("numer1").innerHTML = tablica[Math.random() * tablica.length << 0];
 	if(tgu == 'O') {
 		document.getElementById('numer1').style.backgroundColor = 'red';
@@ -26,6 +29,9 @@ const wybieranie1 = function () {
 	}else if(tgu == 'A') {
 		document.getElementById('numer1').style.backgroundColor = 'yellow';
 		document.getElementById('numer1').style.color = 'black';
+	} else if (tgu == 'E') {
+		document.getElementById('numer1').style.backgroundColor = 'black';
+		document.getElementById('numer1').style.color = 'orange';
 	};
 	//dodanie elementu 'div' do body
 
@@ -37,7 +43,7 @@ kulka1.addEventListener("click", wybieranie1);
 const wybieranie2 = function () {
 	//utworzenie elementu 'div'
 
-	var tablica = ['A', 'X', 'C', 'Y', 'B',  'E', 'S', 'T', 'O'];
+	var tablica = ['X', 'S', 'T'];
 	var tgu = document.getElementById("numer2").innerHTML = tablica[Math.random() * tablica.length << 0];
 	if(tgu == 'X') {
 		document.getElementById('numer2').style.backgroundColor = 'red';
@@ -45,6 +51,9 @@ const wybieranie2 = function () {
 	}else if(tgu == 'T') {
 		document.getElementById('numer2').style.backgroundColor = 'yellow';
 		document.getElementById('numer2').style.color = 'black';
+	}else if(tgu == 'S') {
+		document.getElementById('numer2').style.backgroundColor = 'black';
+		document.getElementById('numer2').style.color = 'orange';
 	};
 	//dodanie elementu 'div' do body
 

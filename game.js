@@ -1,40 +1,53 @@
 //tworzenie funkcji anonimowej przypisanej do zmiennej 'wybieranie'
-const wybieranie = function() {
+const wybieranie = function () {
 	// utworzenie tablicy
-	var tablica = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L','Z', 'X', 'C', 'V', 'B', 'N', 'M', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U','I', 'O', 'P'];
-	document.getElementById("numer").innerHTML = tablica[Math.random() * tablica.length <<0];
-	
-	//dodanie elementu 'div' do body
-	
-}
-function won(){
-	const kulka = document.querySelector("#numer");
-	if( kulka.value == 'A', 'Z','C','F','R','T'){
-		document.getElementById('body').style.backgroundImage = "url(https://cdn.pixabay.com/photo/2016/02/06/13/42/winner-1182937_1280.png)";
-	}
+	var tablica = ['A', 'X', 'C', 'Y', 'B',  'E', 'S', 'T', 'O'];
+	var tgu = document.getElementById("numer").innerHTML = tablica[Math.random() * tablica.length << 0];
+	if (tgu == 'B') {
+		document.getElementById('numer').style.backgroundColor = 'red';
+		document.getElementById('numer').style.color = 'white';
+		//dodanie elementu 'div' do body
+	} else if(tgu == 'C') {
+		document.getElementById('numer').style.backgroundColor = 'yellow';
+		document.getElementById('numer').style.color = 'black';
+	};
 }
 const kulka = document.querySelector("#numer");
 kulka.addEventListener("click", wybieranie);
 
-const wybieranie1 = function() {
+const wybieranie1 = function () {
 	//utworzenie elementu 'div'
-	
-	var tablica = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L','Z', 'X', 'C', 'V', 'B', 'N', 'M', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U','I', 'O', 'P'];
-	document.getElementById("numer1").innerHTML = tablica[Math.random() * tablica.length <<0];
+
+	var tablica = ['A', 'X', 'C', 'Y', 'B',  'E', 'S', 'T', 'O'];
+	var tgu = document.getElementById("numer1").innerHTML = tablica[Math.random() * tablica.length << 0];
+	if(tgu == 'O') {
+		document.getElementById('numer1').style.backgroundColor = 'red';
+		document.getElementById('numer1').style.color = 'white';
+	}else if(tgu == 'A') {
+		document.getElementById('numer1').style.backgroundColor = 'yellow';
+		document.getElementById('numer1').style.color = 'black';
+	};
 	//dodanie elementu 'div' do body
-	
+
 }
 
 const kulka1 = document.querySelector("#numer1");
 kulka1.addEventListener("click", wybieranie1);
 
-const wybieranie2 = function() {
+const wybieranie2 = function () {
 	//utworzenie elementu 'div'
-	
-	var tablica = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L','Z', 'X', 'C', 'V', 'B', 'N', 'M', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U','I', 'O', 'P'];
-	document.getElementById("numer2").innerHTML = tablica[Math.random() * tablica.length <<0];
+
+	var tablica = ['A', 'X', 'C', 'Y', 'B',  'E', 'S', 'T', 'O'];
+	var tgu = document.getElementById("numer2").innerHTML = tablica[Math.random() * tablica.length << 0];
+	if(tgu == 'X') {
+		document.getElementById('numer2').style.backgroundColor = 'red';
+		document.getElementById('numer2').style.color = 'white';
+	}else if(tgu == 'T') {
+		document.getElementById('numer2').style.backgroundColor = 'yellow';
+		document.getElementById('numer2').style.color = 'black';
+	};
 	//dodanie elementu 'div' do body
-	
+
 }
 const kulka2 = document.querySelector("#numer2");
 kulka2.addEventListener("click", wybieranie2);
@@ -42,10 +55,10 @@ kulka2.addEventListener("click", wybieranie2);
 
 
 
-const losowanie = function() {
-	
+const losowanie = function () {
+
 	var tablica2 = ['cat', 'dog', 'yes', 'two', 'box'];
-	document.getElementById("words").innerHTML = tablica2[Math.random() * tablica2.length <<0];
+	document.getElementById("words").innerHTML = tablica2[Math.random() * tablica2.length << 0];
 }
 //wywołanie funkcji 'losowanie'
 //losowanie()
@@ -59,14 +72,14 @@ var messages = document.getElementById("messages");
 var textbox = document.getElementById("textbox");
 var button = document.getElementById("button7");
 
-button.addEventListener("click", function() {
-	
+button.addEventListener("click", function () {
+
 	document.getElementById("name").innerHTML = textbox.value;
 
 	textbox.value = "";
 });
+// funkcja wygrania losowania
 
 
 
-	
-				
+// koniec funkcji wygrania losowania

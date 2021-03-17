@@ -2,7 +2,7 @@
 
 const wybieranie = function () {
 	// utworzenie tablicy
-	var tablica = ['C', 'Y', 'B', ];
+	var tablica = ['C', 'Y', 'B','T' ];
 	var tgu = document.getElementById("numer").innerHTML = tablica[Math.random() * tablica.length << 0];
 	if (tgu == 'B') {
 		document.getElementById('numer').style.backgroundColor = 'red';
@@ -14,6 +14,9 @@ const wybieranie = function () {
 	} else if (tgu == 'Y') {
 		document.getElementById('numer').style.backgroundColor = 'black';
 		document.getElementById('numer').style.color = 'orange';
+	} else if (tgu == 'T') {
+		document.getElementById('numer').style.backgroundColor = 'green';
+		document.getElementById('numer').style.color = 'red';
 	};
 }
 const kulka = document.querySelector("#numer");
@@ -23,7 +26,7 @@ kulka.addEventListener("click", wybieranie, bingo);
 
 const wybieranie1 = function () {
 
-	var tablica = ['A', 'E', 'O'];
+	var tablica = ['A', 'E', 'O', 'W'];
 	var tgu = document.getElementById("numer1").innerHTML = tablica[Math.random() * tablica.length << 0];
 	if (tgu == 'O') {
 		document.getElementById('numer1').style.backgroundColor = 'red';
@@ -34,6 +37,9 @@ const wybieranie1 = function () {
 	} else if (tgu == 'E') {
 		document.getElementById('numer1').style.backgroundColor = 'black';
 		document.getElementById('numer1').style.color = 'orange';
+	} else if (tgu == 'W') {
+		document.getElementById('numer1').style.backgroundColor = 'green';
+		document.getElementById('numer1').style.color = 'red';
 	};
 
 }
@@ -45,7 +51,7 @@ kulka1.addEventListener("click", wybieranie1, bingo);
 // funkcja losowania litery dla 'kulki2'
 const wybieranie2 = function () {
 
-	var tablica = ['X', 'S', 'T'];
+	var tablica = ['X', 'S', 'T', 'O'];
 	var tgu = document.getElementById("numer2").innerHTML = tablica[Math.random() * tablica.length << 0];
 	if (tgu == 'X') {
 		document.getElementById('numer2').style.backgroundColor = 'red';
@@ -56,6 +62,9 @@ const wybieranie2 = function () {
 	} else if (tgu == 'S') {
 		document.getElementById('numer2').style.backgroundColor = 'black';
 		document.getElementById('numer2').style.color = 'orange';
+	} else if (tgu == 'O') {
+		document.getElementById('numer2').style.backgroundColor = 'green';
+		document.getElementById('numer2').style.color = 'red';
 	};
 
 }

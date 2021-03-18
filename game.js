@@ -7,10 +7,12 @@ const wybieranie = function () {
 	if (tgu == 'B') {
 		document.getElementById('numer').style.backgroundColor = 'red';
 		document.getElementById('numer').style.color = 'white';
+		
 		//dodanie elementu 'div' do body
 	} else if (tgu == 'C') {
 		document.getElementById('numer').style.backgroundColor = 'yellow';
 		document.getElementById('numer').style.color = 'black';
+		
 	} else if (tgu == 'Y') {
 		document.getElementById('numer').style.backgroundColor = 'black';
 		document.getElementById('numer').style.color = 'orange';
@@ -18,9 +20,11 @@ const wybieranie = function () {
 		document.getElementById('numer').style.backgroundColor = 'green';
 		document.getElementById('numer').style.color = 'red';
 	};
+	
 }
 const kulka = document.querySelector("#numer");
-kulka.addEventListener("click", wybieranie, bingo);
+kulka.addEventListener("click", wybieranie)
+
 
 // funkcja losowania litery dla 'kulki1'
 
@@ -45,7 +49,7 @@ const wybieranie1 = function () {
 }
 
 const kulka1 = document.querySelector("#numer1");
-kulka1.addEventListener("click", wybieranie1, bingo);
+kulka1.addEventListener("click", wybieranie1);
 
 
 // funkcja losowania litery dla 'kulki2'
@@ -69,7 +73,7 @@ const wybieranie2 = function () {
 
 }
 const kulka2 = document.querySelector("#numer2");
-kulka2.addEventListener("click", wybieranie2, bingo);
+kulka2.addEventListener("click", wybieranie2);
 
 
 
@@ -98,14 +102,25 @@ button.addEventListener("click", function () {
 	textbox.value = "";
 });
 // funkcja wygrania losowania
-var bingo = function () {
-	if(numer.style.backgroundColor = "red") {
-		document.getElementById('name').innerHTML = 'win';
-	};
-};
+
 // funkcja wygrania losowania
-
-
-
+/*if(kulka == 'B'  && kulka1 == 'O'   && kulka2 == 'X' ) {
+	document.getElementById("win2").innerHTML = "4";
+}else if(kulka.style.backgroundColor == 'yellow' ) {
+	document.getElementById("win2").innerHTML = "6";
+} else if(kulka.style.backgroundColor == 'black' ) {
+	document.getElementById("win2").innerHTML = "3";
+}else if(kulka.style.backgroundColor == 'green' ) {
+	document.getElementById("win2").innerHTML = "1";
+};*/
+/*const winner = function() {
+	if(kulka.value ==  "B" &&  kulka1.value ==  "O" &&  kulka2.value =="X") {
+		document.getElementById("win2").innerHTML = "4";
+	}
+}
+var op = document.getElementById('op');
+if(op.value > ""){
+	document.write("op.value");
+}*/
 
 // koniec funkcji wygrania losowania

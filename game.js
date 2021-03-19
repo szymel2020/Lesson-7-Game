@@ -12,15 +12,35 @@ const wybieranie = function () {
 	} else if (tgu == 'C') {
 		document.getElementById('numer').style.backgroundColor = 'yellow';
 		document.getElementById('numer').style.color = 'black';
-		
+	
 	} else if (tgu == 'Y') {
 		document.getElementById('numer').style.backgroundColor = 'black';
 		document.getElementById('numer').style.color = 'orange';
+		
 	} else if (tgu == 'T') {
 		document.getElementById('numer').style.backgroundColor = 'green';
 		document.getElementById('numer').style.color = 'red';
 	};
-	
+	var win2 = document.getElementById("win2");
+	switch (tgu)
+	{
+		case "B" :
+			document.getElementById("win2").innerHTML = " 4";
+			win2.style.color = "red";
+			break;
+		case "C" :
+			document.getElementById("win2").innerHTML = " 2";
+			win2.style.color = "yellow";
+			break;
+		case "Y" :
+			document.getElementById("win2").innerHTML = " 6";
+			win2.style.color = "black";
+			break;
+		case "T" :
+			document.getElementById("win2").innerHTML = " 8";
+			win2.style.color = "green";
+			break;
+}
 }
 const kulka = document.querySelector("#numer");
 kulka.addEventListener("click", wybieranie)
@@ -31,21 +51,40 @@ kulka.addEventListener("click", wybieranie)
 const wybieranie1 = function () {
 
 	var tablica = ['A', 'E', 'O', 'W'];
-	var tgu = document.getElementById("numer1").innerHTML = tablica[Math.random() * tablica.length << 0];
-	if (tgu == 'O') {
+	var tgu1 = document.getElementById("numer1").innerHTML = tablica[Math.random() * tablica.length << 0];
+	if (tgu1 == 'O') {
 		document.getElementById('numer1').style.backgroundColor = 'red';
 		document.getElementById('numer1').style.color = 'white';
-	} else if (tgu == 'A') {
+	} else if (tgu1 == 'A') {
 		document.getElementById('numer1').style.backgroundColor = 'yellow';
 		document.getElementById('numer1').style.color = 'black';
-	} else if (tgu == 'E') {
+	} else if (tgu1 == 'E') {
 		document.getElementById('numer1').style.backgroundColor = 'black';
 		document.getElementById('numer1').style.color = 'orange';
-	} else if (tgu == 'W') {
+	} else if (tgu1 == 'W') {
 		document.getElementById('numer1').style.backgroundColor = 'green';
 		document.getElementById('numer1').style.color = 'red';
 	};
-
+var win3 = document.getElementById("win3");
+	switch (tgu1)
+	{
+		case "O" :
+			document.getElementById("win3").innerHTML = " 4";
+			win3.style.color = "red";
+			break;
+		case "A" :
+			document.getElementById("win3").innerHTML = " 2";
+			win3.style.color = "yellow";
+			break;
+		case "E" :
+			document.getElementById("win3").innerHTML = " 6";
+			win3.style.color = "black";
+			break;
+		case "W" :
+			document.getElementById("win3").innerHTML = " 8";
+			win3.style.color = "green";
+			break;
+}
 }
 
 const kulka1 = document.querySelector("#numer1");
@@ -56,21 +95,40 @@ kulka1.addEventListener("click", wybieranie1);
 const wybieranie2 = function () {
 
 	var tablica = ['X', 'S', 'T', 'O'];
-	var tgu = document.getElementById("numer2").innerHTML = tablica[Math.random() * tablica.length << 0];
-	if (tgu == 'X') {
+	var tgu2 = document.getElementById("numer2").innerHTML = tablica[Math.random() * tablica.length << 0];
+	if (tgu2 == 'X') {
 		document.getElementById('numer2').style.backgroundColor = 'red';
 		document.getElementById('numer2').style.color = 'white';
-	} else if (tgu == 'T') {
+	} else if (tgu2 == 'T') {
 		document.getElementById('numer2').style.backgroundColor = 'yellow';
 		document.getElementById('numer2').style.color = 'black';
-	} else if (tgu == 'S') {
+	} else if (tgu2 == 'S') {
 		document.getElementById('numer2').style.backgroundColor = 'black';
 		document.getElementById('numer2').style.color = 'orange';
-	} else if (tgu == 'O') {
+	} else if (tgu2 == 'O') {
 		document.getElementById('numer2').style.backgroundColor = 'green';
 		document.getElementById('numer2').style.color = 'red';
 	};
-
+var win4 = document.getElementById("win4");
+	switch (tgu2)
+	{
+		case "X" :
+			document.getElementById("win4").innerHTML = " 4";
+			win4.style.color = "red";
+			break;
+		case "T" :
+			document.getElementById("win4").innerHTML = " 2";
+			win4.style.color = "yellow";
+			break;
+		case "S" :
+			document.getElementById("win4").innerHTML = " 6";
+			win4.style.color = "black";
+			break;
+		case "O" :
+			document.getElementById("win4").innerHTML = " 8";
+			win4.style.color = "green";
+			break;
+}
 }
 const kulka2 = document.querySelector("#numer2");
 kulka2.addEventListener("click", wybieranie2);
@@ -113,14 +171,18 @@ button.addEventListener("click", function () {
 }else if(kulka.style.backgroundColor == 'green' ) {
 	document.getElementById("win2").innerHTML = "1";
 };*/
-/*const winner = function() {
+const winner = function() {
 	if(kulka.value ==  "B" &&  kulka1.value ==  "O" &&  kulka2.value =="X") {
 		document.getElementById("win2").innerHTML = "4";
 	}
 }
+
+						 
+						 
+if(op.value != ""){
 var op = document.getElementById('op');
-if(op.value > ""){
-	document.write("op.value");
-}*/
+	document.getElementById("win2").innerHTML = op.value;
+
+}
 
 // koniec funkcji wygrania losowania

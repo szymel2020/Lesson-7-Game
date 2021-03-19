@@ -104,6 +104,13 @@ div {
 	font-family: 'Share Tech Mono', monospace;
 }
 
+#win1, #win2, #win3, #win4 {
+	font-family:  'Share Tech Mono', monospace;
+	float: left;
+	margin: .5em;
+	font-size: 2em;
+}
+
 footer {
 	display: flex;
 	align-items: center;

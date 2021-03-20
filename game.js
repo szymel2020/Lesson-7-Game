@@ -171,18 +171,26 @@ button.addEventListener("click", function () {
 }else if(kulka.style.backgroundColor == 'green' ) {
 	document.getElementById("win2").innerHTML = "1";
 };*/
-const winner = function() {
-	if(kulka.value ==  "B" &&  kulka1.value ==  "O" &&  kulka2.value =="X") {
-		document.getElementById("win2").innerHTML = "4";
-	}
-}
-
-						 
-						 
-if(op.value != ""){
-var op = document.getElementById('op');
-	document.getElementById("win2").innerHTML = op.value;
-
-}
 
 // koniec funkcji wygrania losowania
+
+var win2 = document.getElementById("#win2");
+var win3 = document.getElementById("#win3");
+var win4 = document.getElementById("#win4");
+var win1 = document.getElementById("#win1");
+var win0 = win2.value + win3.value +win4.value;
+
+
+function yhb (win2, win3, win4) {
+	
+return win2 + win3 + win4;
+};
+document.getElementById("win1").innerHTML = yhb(1, 4, 3) ;
+
+
+
+
+
+
+
+

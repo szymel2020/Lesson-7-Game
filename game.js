@@ -43,7 +43,7 @@ const wybieranie = function () {
 }
 }
 const kulka = document.querySelector("#numer");
-kulka.addEventListener("click", wybieranie)
+kulka.addEventListener("click", wybieranie )
 
 
 // funkcja losowania litery dla 'kulki1'
@@ -174,18 +174,26 @@ button.addEventListener("click", function () {
 
 // koniec funkcji wygrania losowania
 
-var win2 = document.getElementById("#win2");
-var win3 = document.getElementById("#win3");
-var win4 = document.getElementById("#win4");
+var win2 = document.getElementById("win2").value;
+var win3 = document.getElementById("win3").value;
+var win4 = document.getElementById("win4").value;
 var win1 = document.getElementById("#win1");
-var win0 = win2.value + win3.value +win4.value;
 
 
-function yhb (win2, win3, win4) {
-	
-return win2 + win3 + win4;
-};
-document.getElementById("win1").innerHTML = yhb(1, 4, 3) ;
+var win = document.getElementById("win");
+	win.addEventListener("click", bingo);
+function bingo(){
+	/*if(kulka.style.backgroundColor ==  kulka1.style.backgroundColor && kulka.style.backgroundColor  == kulka2.style.backgroundColor  )*/
+if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )
+	{
+		var sum = 4 + 4 + 4 ;
+		document.getElementById('win1').innerHTML = sum;
+	};
+}
+
+
+
+/*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/
 
 
 

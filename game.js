@@ -199,8 +199,11 @@ if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red"
 	}else if(kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black" )
 	{
 		var sum = 6 + 6 + 6 ;
-		document.getElementById('win1').innerHTML = sum;
-	};
+		document.getElementById('win1').innerHTML = sum;	
+	} else if(kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black" ){
+				
+		document.getElementById('win1').innerHTML = "";
+			};
 }
 
 

@@ -196,6 +196,10 @@ if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red"
 	{
 		var sum = 8 + 8 + 8 ;
 		document.getElementById('win1').innerHTML = sum;
+	}else if(kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black" )
+	{
+		var sum = 6 + 6 + 6 ;
+		document.getElementById('win1').innerHTML = sum;
 	};
 }
 

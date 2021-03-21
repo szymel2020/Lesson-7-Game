@@ -111,6 +111,14 @@ div {
 	font-size: 2em;
 }
 
+.plusButton {
+	display: flex;
+	color: white;
+	background-color: #d51add;
+	margin-left: 715px;
+	margin-right: 700px;
+}
+
 footer {
 	display: flex;
 	align-items: center;

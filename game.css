@@ -89,7 +89,7 @@ h2 {
 	color: #0619ff;
 }
 
-div {
+#numer, #numer1, #numer2 {
 	float: left;
 	width: 90px;
 	height: 90px;
@@ -117,6 +117,19 @@ div {
 	background-color: #d51add;
 	margin-left: 715px;
 	margin-right: 700px;
+}
+.sum0 {
+	display: flex;
+	margin-left: 715px;
+}
+
+ #sum1, #sum2, #sum3, #sum4 {
+	
+	background-color: coral;
+	height: 2em;
+	width: 2em;
+	 margin: 10px 5px 10px 0 ;
+	 
 }
 
 footer {

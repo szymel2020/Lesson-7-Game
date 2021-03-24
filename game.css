@@ -111,7 +111,7 @@ h2 {
 	font-size: 2em;
 }
 
-.plusButton {
+#plusButton {
 	display: flex;
 	color: white;
 	background-color: #d51add;

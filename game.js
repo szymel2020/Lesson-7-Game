@@ -2,48 +2,47 @@
 
 const wybieranie = function () {
 	// utworzenie tablicy
-	var tablica = ['C', 'Y', 'B','T' ];
+	var tablica = ['C', 'Y', 'B', 'T'];
 	var tgu = document.getElementById("numer").innerHTML = tablica[Math.random() * tablica.length << 0];
 	if (tgu == 'B') {
 		document.getElementById('numer').style.backgroundColor = 'red';
 		document.getElementById('numer').style.color = 'white';
-		
+
 		//dodanie elementu 'div' do body
 	} else if (tgu == 'C') {
 		document.getElementById('numer').style.backgroundColor = 'yellow';
 		document.getElementById('numer').style.color = 'black';
-	
+
 	} else if (tgu == 'Y') {
 		document.getElementById('numer').style.backgroundColor = 'black';
 		document.getElementById('numer').style.color = 'orange';
-		
+
 	} else if (tgu == 'T') {
 		document.getElementById('numer').style.backgroundColor = 'green';
 		document.getElementById('numer').style.color = 'red';
 	};
 	var win2 = document.getElementById("win2");
-	switch (tgu)
-	{
-		case "B" :
+	switch (tgu) {
+		case "B":
 			document.getElementById("win2").innerHTML = " 4";
 			win2.style.color = "red";
 			break;
-		case "C" :
+		case "C":
 			document.getElementById("win2").innerHTML = " 2";
 			win2.style.color = "yellow";
 			break;
-		case "Y" :
+		case "Y":
 			document.getElementById("win2").innerHTML = " 6";
 			win2.style.color = "black";
 			break;
-		case "T" :
+		case "T":
 			document.getElementById("win2").innerHTML = " 8";
 			win2.style.color = "green";
 			break;
-}
+	}
 }
 const kulka = document.querySelector("#numer");
-kulka.addEventListener("click", wybieranie )
+kulka.addEventListener("click", wybieranie)
 
 
 // funkcja losowania litery dla 'kulki1'
@@ -65,26 +64,25 @@ const wybieranie1 = function () {
 		document.getElementById('numer1').style.backgroundColor = 'green';
 		document.getElementById('numer1').style.color = 'red';
 	};
-var win3 = document.getElementById("win3");
-	switch (tgu1)
-	{
-		case "O" :
+	var win3 = document.getElementById("win3");
+	switch (tgu1) {
+		case "O":
 			document.getElementById("win3").innerHTML = " 4";
 			win3.style.color = "red";
 			break;
-		case "A" :
+		case "A":
 			document.getElementById("win3").innerHTML = " 2";
 			win3.style.color = "yellow";
 			break;
-		case "E" :
+		case "E":
 			document.getElementById("win3").innerHTML = " 6";
 			win3.style.color = "black";
 			break;
-		case "W" :
+		case "W":
 			document.getElementById("win3").innerHTML = " 8";
 			win3.style.color = "green";
 			break;
-}
+	}
 }
 
 const kulka1 = document.querySelector("#numer1");
@@ -109,26 +107,25 @@ const wybieranie2 = function () {
 		document.getElementById('numer2').style.backgroundColor = 'green';
 		document.getElementById('numer2').style.color = 'red';
 	};
-var win4 = document.getElementById("win4");
-	switch (tgu2)
-	{
-		case "X" :
+	var win4 = document.getElementById("win4");
+	switch (tgu2) {
+		case "X":
 			document.getElementById("win4").innerHTML = " 4";
 			win4.style.color = "red";
 			break;
-		case "T" :
+		case "T":
 			document.getElementById("win4").innerHTML = " 2";
 			win4.style.color = "yellow";
 			break;
-		case "S" :
+		case "S":
 			document.getElementById("win4").innerHTML = " 6";
 			win4.style.color = "black";
 			break;
-		case "O" :
+		case "O":
 			document.getElementById("win4").innerHTML = " 8";
 			win4.style.color = "green";
 			break;
-}
+	}
 }
 const kulka2 = document.querySelector("#numer2");
 kulka2.addEventListener("click", wybieranie2);
@@ -181,39 +178,65 @@ var win1 = document.getElementById("#win1");
 
 
 var win = document.getElementById("win");
-	win.addEventListener("click", bingo);
-function bingo(){
+win.addEventListener("click", bingo);
+
+function bingo() {
 	/*if(kulka.style.backgroundColor ==  kulka1.style.backgroundColor && kulka.style.backgroundColor  == kulka2.style.backgroundColor  )*/
-if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )
-	{
+	if (kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red") {
 		var sum = 4 + 4 + 4 ;
 		document.getElementById('win1').innerHTML = sum;
-	}else if(kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow" )
-	{
-		var sum = 2 + 2 + 2 ;
-		document.getElementById('win1').innerHTML = sum;
-	}else if(kulka.style.backgroundColor == "green" && kulka1.style.backgroundColor == "green" && kulka2.style.backgroundColor == "green" )
-	{
-		var sum = 8 + 8 + 8 ;
-		document.getElementById('win1').innerHTML = sum;
-	}else if(kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black" )
-	{
-		var sum = 6 + 6 + 6 ;
-		document.getElementById('win1').innerHTML = sum;	
-	} else if(kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black" ){
-				
-		document.getElementById('win1').innerHTML = "";
-			};
-}
+		plusButton.addEventListener("click", function () {
 
+			document.getElementById("sum1").innerHTML = sum;
+
+			document.getElementById('win1').innerHTML = "";
+		});
+	} else if (kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow") {
+		var sum = 2 + 2 + 2;
+		document.getElementById('win1').innerHTML = sum;
+		plusButton.addEventListener("click", function () {
+
+			document.getElementById("sum1").innerHTML = sum;
+
+			document.getElementById('win1').innerHTML = "";
+		});
+	} else if (kulka.style.backgroundColor == "green" && kulka1.style.backgroundColor == "green" && kulka2.style.backgroundColor == "green") {
+		var sum = 8 + 8 + 8;
+		document.getElementById('win1').innerHTML = sum;
+		plusButton.addEventListener("click", function () {
+
+			document.getElementById("sum1").innerHTML = sum;
+
+			document.getElementById('win1').innerHTML = "";
+		});
+	} else if (kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black") {
+		var sum = 6 + 6 + 6;
+		document.getElementById('win1').innerHTML = sum;
+		plusButton.addEventListener("click", function () {
+
+			document.getElementById("sum1").innerHTML = sum;
+
+			document.getElementById('win1').innerHTML = "";
+		});
+	} else if (kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black") {
+
+		document.getElementById('win1').innerHTML = "";
+	};
+}
 
 
 /*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/
 
+var plusButton = document.getElementById("plusButton");
+//var sum1 = document.getElementById("sum1");
+//var win1 = document.getElementById("54");
 
 
+/*
+plusButton.addEventListener("click", function () {
 
+	document.getElementById("sum1").innerHTML = '5';
 
-
-
-
+	//win1.value = "";
+});
+*/

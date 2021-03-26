@@ -181,22 +181,32 @@ var win = document.getElementById("win");
 win.addEventListener("click", bingo);
 
 function bingo() {
+	var sum1 = document.getElementById("sum1");
+	var sum2 = document.getElementById("sum2");
+	var plusButton = document.getElementById("plusButton");
 	/*if(kulka.style.backgroundColor ==  kulka1.style.backgroundColor && kulka.style.backgroundColor  == kulka2.style.backgroundColor  )*/
 	if (kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red") {
 		var sum = 4 + 4 + 4 ;
 		document.getElementById('win1').innerHTML = sum;
-		plusButton.addEventListener("click", function () {
-
+		plusButton.addEventListener("click", function () 
+										 
+		
+		{
+				
 			document.getElementById("sum1").innerHTML = sum;
 
 			document.getElementById('win1').innerHTML = "";
-		});
+			}
+
+		);
 	} else if (kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow") {
 		var sum = 2 + 2 + 2;
 		document.getElementById('win1').innerHTML = sum;
-		plusButton.addEventListener("click", function () {
+		plusButton.addEventListener("click", function () 
+									 
+			{
 
-			document.getElementById("sum1").innerHTML = sum;
+			document.getElementById("sum2").innerHTML = sum;
 
 			document.getElementById('win1').innerHTML = "";
 		});
@@ -205,7 +215,7 @@ function bingo() {
 		document.getElementById('win1').innerHTML = sum;
 		plusButton.addEventListener("click", function () {
 
-			document.getElementById("sum1").innerHTML = sum;
+			document.getElementById("sum3").innerHTML = sum;
 
 			document.getElementById('win1').innerHTML = "";
 		});
@@ -214,7 +224,7 @@ function bingo() {
 		document.getElementById('win1').innerHTML = sum;
 		plusButton.addEventListener("click", function () {
 
-			document.getElementById("sum1").innerHTML = sum;
+			document.getElementById("sum4").innerHTML = sum;
 
 			document.getElementById('win1').innerHTML = "";
 		});
@@ -227,8 +237,8 @@ function bingo() {
 
 /*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/
 
-var plusButton = document.getElementById("plusButton");
-//var sum1 = document.getElementById("sum1");
+
+
 //var win1 = document.getElementById("54");
 
 

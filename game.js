@@ -192,10 +192,10 @@ function bingo() {
 										 
 		
 		{
-				
-			document.getElementById("sum1").innerHTML = sum;
-
-			document.getElementById('win1').innerHTML = "";
+			var newElem = document.getElementById('sum').value;
+			var li = document.createElement('li');
+			li.className = 'list-group';
+			li.appendChild(document.createTextNode(newElem));
 			}
 
 		);

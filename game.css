@@ -111,6 +111,7 @@ h2 {
 	font-size: 2em;
 }
 
+
 #plusButton {
 	display: flex;
 	color: white;
@@ -133,6 +134,7 @@ h2 {
 	 margin: 10px 5px 10px 0 ;
 	 
 }
+
 
 footer {
 	display: flex;

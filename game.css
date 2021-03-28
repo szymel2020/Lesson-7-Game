@@ -116,12 +116,16 @@ h2 {
 	display: flex;
 	color: white;
 	background-color: #d51add;
-	margin-left: 715px;
-	margin-right: 700px;
+	margin: 10px 5px 10px 0 ;
+	align-items: center;
+	justify-content:center;
+	height: 6em;
+	width: 3em;
 }
 .sum0 {
 	display: flex;
 	margin-left: 715px;
+	
 }
 
  #sum1, #sum2, #sum3, #sum4 {
@@ -129,10 +133,11 @@ h2 {
 	background-color: pink;
 	 align-items: center;
 	 justify-content: center;
-	height: 2em;
-	width: 2em;
+	height: 2.5em;
+	width: 2.5em;
 	 margin: 10px 5px 10px 0 ;
-	 
+	 font-family:  'Share Tech Mono', monospace;
+	 font-size: 2em;
 }
 
 

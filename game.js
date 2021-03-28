@@ -183,70 +183,74 @@ win.addEventListener("click", bingo);
 function bingo() {
 	var sum1 = document.getElementById("sum1");
 	var sum2 = document.getElementById("sum2");
-	var plusButton = document.getElementById("plusButton");
+	var sum3 = document.getElementById("sum3");
+	var sum4 = document.getElementById("sum4");
 	/*if(kulka.style.backgroundColor ==  kulka1.style.backgroundColor && kulka.style.backgroundColor  == kulka2.style.backgroundColor  )*/
 	if (kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red") {
-		var sum = 4 + 4 + 4 ;
+		var sum = 4 + 4 + 4;
 		document.getElementById('win1').innerHTML = sum;
-		plusButton.addEventListener("click", function () 
-										 
-		
-		{
-			var newElem = document.getElementById('sum').value;
-			var li = document.createElement('li');
-			li.className = 'list-group';
-			li.appendChild(document.createTextNode(newElem));
-			}
 
-		);
-	} else if (kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow") {
-		var sum = 2 + 2 + 2;
-		document.getElementById('win1').innerHTML = sum;
-		plusButton.addEventListener("click", function () 
-									 
+		var plusButton = document.getElementById("plusButton");
+		plusButton.addEventListener("click", function ()
+
 			{
+				document.getElementById("sum1").innerHTML = sum;
 
-			document.getElementById("sum2").innerHTML = sum;
+				document.getElementById('win1').innerHTML = "";
+			});
+
+		}
+		else if (kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow") {
+			var sum = 2 + 2 + 2;
+			document.getElementById('win1').innerHTML = sum;
+			var plusButton = document.getElementById("plusButton");
+			plusButton.addEventListener("click", function ()
+
+				{
+
+					document.getElementById("sum2").innerHTML = sum;
+
+					document.getElementById('win1').innerHTML = "";
+				});
+		} else if (kulka.style.backgroundColor == "green" && kulka1.style.backgroundColor == "green" && kulka2.style.backgroundColor == "green") {
+			var sum = 8 + 8 + 8;
+			document.getElementById('win1').innerHTML = sum;
+			var plusButton = document.getElementById("plusButton");
+			plusButton.addEventListener("click", function () {
+
+				document.getElementById("sum3").innerHTML = sum;
+
+				document.getElementById('win1').innerHTML = "";
+			});
+		} else if (kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black") {
+			var sum = 6 + 6 + 6;
+			document.getElementById('win1').innerHTML = sum;
+			var plusButton = document.getElementById("plusButton");
+			plusButton.addEventListener("click", function () {
+
+				document.getElementById("sum4").innerHTML = sum;
+
+				document.getElementById('win1').innerHTML = "";
+			});
+		} else if (kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black") {
 
 			document.getElementById('win1').innerHTML = "";
-		});
-	} else if (kulka.style.backgroundColor == "green" && kulka1.style.backgroundColor == "green" && kulka2.style.backgroundColor == "green") {
-		var sum = 8 + 8 + 8;
-		document.getElementById('win1').innerHTML = sum;
-		plusButton.addEventListener("click", function () {
-
-			document.getElementById("sum3").innerHTML = sum;
-
-			document.getElementById('win1').innerHTML = "";
-		});
-	} else if (kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black") {
-		var sum = 6 + 6 + 6;
-		document.getElementById('win1').innerHTML = sum;
-		plusButton.addEventListener("click", function () {
-
-			document.getElementById("sum4").innerHTML = sum;
-
-			document.getElementById('win1').innerHTML = "";
-		});
-	} else if (kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black") {
-
-		document.getElementById('win1').innerHTML = "";
-	};
-}
+		};
+	}
 
 
-/*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/
+	/*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/
 
 
 
-//var win1 = document.getElementById("54");
+	//var win1 = document.getElementById("54");
 
 
-/*
-plusButton.addEventListener("click", function () {
+	/*
+	plusButton.addEventListener("click", function () {
 
-	document.getElementById("sum1").innerHTML = '5';
+		document.getElementById("sum1").innerHTML = '5';
 
-	//win1.value = "";
-});
-*/
+		//win1.value = "";
+	});
+	*/

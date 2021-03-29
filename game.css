@@ -128,7 +128,7 @@ h2 {
 	
 }
 
- #sum1, #sum2, #sum3, #sum4 {
+ #sum1, #sum2, #sum3, #sum4, #demo {
 	display: flex;
 	background-color: pink;
 	 align-items: center;

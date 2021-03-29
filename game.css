@@ -115,12 +115,13 @@ h2 {
 #plusButton {
 	display: flex;
 	color: white;
-	background-color: #d51add;
+	background-color: #27ff00;
 	margin: 10px 5px 10px 0 ;
 	align-items: center;
 	justify-content:center;
-	height: 6em;
-	width: 3em;
+	height: 1em;
+	width: 1em;
+	font-size: 3em;
 }
 .sum0 {
 	display: flex;

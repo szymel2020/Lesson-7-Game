@@ -3,26 +3,34 @@
 
 	var day;
 switch (new Date().getDay()) {
-  case 0:
-    day = "Sunday";
+
+  case Sunday:
+     
+		document.getElementById("demo").innerHTML =  "Sunday";
     break;
-  case 1:
-    day = "Monday";
+  case Monday:
+    
+		document.getElementById("demo").innerHTML =  "Monday";
     break;
   case 2:
     day = "Tuesday";
+		document.getElementById("demo").innerHTML =  day;
     break;
   case 3:
     day = "Wednesday";
+		document.getElementById("demo").innerHTML =  day;
     break;
   case 4:
     day = "Thursday";
+		document.getElementById("demo").innerHTML =  day;
     break;
   case 5:
     day = "Friday";
+		document.getElementById("demo").innerHTML =  day;
     break;
   case  6:
     day = "Saturday";
+		document.getElementById("demo").innerHTML =  day;
 }
 document.getElementById("demo").innerHTML =  day;
 

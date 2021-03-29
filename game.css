@@ -114,7 +114,7 @@ h2 {
 
 #plusButton {
 	display: flex;
-	color: white;
+	color: #f40909;
 	background-color: #27ff00;
 	margin: 10px 5px 10px 0 ;
 	align-items: center;

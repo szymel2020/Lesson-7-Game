@@ -1,38 +1,22 @@
 
 // Day of week
 
-	var day;
-switch (new Date().getDay()) {
+function myFunction() {
+  var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
 
-  case Sunday:
-     
-		document.getElementById("demo").innerHTML =  "Sunday";
-    break;
-  case Monday:
-    
-		document.getElementById("demo").innerHTML =  "Monday";
-    break;
-  case 2:
-    day = "Tuesday";
-		document.getElementById("demo").innerHTML =  day;
-    break;
-  case 3:
-    day = "Wednesday";
-		document.getElementById("demo").innerHTML =  day;
-    break;
-  case 4:
-    day = "Thursday";
-		document.getElementById("demo").innerHTML =  day;
-    break;
-  case 5:
-    day = "Friday";
-		document.getElementById("demo").innerHTML =  day;
-    break;
-  case  6:
-    day = "Saturday";
-		document.getElementById("demo").innerHTML =  day;
+  var n = weekday[d.getDay()];
+  document.getElementById("demo").innerHTML = n;
 }
-document.getElementById("demo").innerHTML =  day;
+myFunction();
+	
 
 
 //tworzenie funkcji anonimowej przypisanej do zmiennej 'wybieranie'

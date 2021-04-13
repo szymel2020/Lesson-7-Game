@@ -193,189 +193,55 @@ function bingo() {
 		document.getElementById('win1').innerHTML = sum;
 
 		var plusButton = document.getElementById("plusButton");
-		plusButton.addEventListener("click", function (){
-											 
-				
-				if(sum1 != "")	{
-					document.getElementById("sum1").innerHTML = sum;
-			document.getElementById('sum1').style.color = "red";
+		plusButton.addEventListener("click", function ()
 
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 ==sum ){
-					document.getElementById("sum2").innerHTML = sum;
-			document.getElementById('sum2').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 == sum && sum2 == sum ) {
-					document.getElementById("sum3").innerHTML = sum;
-			document.getElementById('sum3').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 == sum && sum2 == sum && sum3 == sum ) {
-					document.getElementById("sum4").innerHTML = sum;
-			document.getElementById('sum4').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}
-		}
-
-			/*{
+			{
 				document.getElementById("sum1").innerHTML = sum;
 			document.getElementById('sum1').style.color = "red";
 
 				document.getElementById('win1').innerHTML = "";
-			}*/
-											
-			);
+			});
 
 		}
 		else if (kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow") {
 			var sum = 2 + 2 + 2;
 			document.getElementById('win1').innerHTML = sum;
 			var plusButton = document.getElementById("plusButton");
-			plusButton.addEventListener("click", function (){
-											 
-				
-					if(sum1 != "")	{
-					document.getElementById("sum1").innerHTML = sum;
-			document.getElementById('sum1').style.color = "red";
+			plusButton.addEventListener("click", function ()
 
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 ==sum ){
-					document.getElementById("sum2").innerHTML = sum;
-			document.getElementById('sum2').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 == sum && sum2 == sum ) {
-					document.getElementById("sum3").innerHTML = sum;
-			document.getElementById('sum3').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 == sum && sum2 == sum && sum3 == sum ) {
-					document.getElementById("sum4").innerHTML = sum;
-			document.getElementById('sum4').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}
-		}
-												 
-												 
-												 
-
-				/*{
+				{
 
 					document.getElementById("sum2").innerHTML = sum;
 					document.getElementById("sum2").style.color = "yellow";
 					document.getElementById('win1').innerHTML = "";
-				}*/
-												 
-				);
+				});
 		} else if (kulka.style.backgroundColor == "green" && kulka1.style.backgroundColor == "green" && kulka2.style.backgroundColor == "green") {
 			var sum = 8 + 8 + 8;
 			document.getElementById('win1').innerHTML = sum;
 			var plusButton = document.getElementById("plusButton");
 			plusButton.addEventListener("click", function () {
-											 
-				
-					if(sum1 != "")	{
-					document.getElementById("sum1").innerHTML = sum;
-			document.getElementById('sum1').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 ==sum ){
-					document.getElementById("sum2").innerHTML = sum;
-			document.getElementById('sum2').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 == sum && sum2 == sum ) {
-					document.getElementById("sum3").innerHTML = sum;
-			document.getElementById('sum3').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 == sum && sum2 == sum && sum3 == sum ) {
-					document.getElementById("sum4").innerHTML = sum;
-			document.getElementById('sum4').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}
-		}
-												 
-												 
-												 
-			/*{
 
 				document.getElementById("sum3").innerHTML = sum;
 				document.getElementById("sum3").style.color = "green";
 				document.getElementById('win1').innerHTML = "";
-			}*/
-												
-			);
+			});
 		} else if (kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black") {
 			var sum = 6 + 6 + 6;
 			document.getElementById('win1').innerHTML = sum;
 			var plusButton = document.getElementById("plusButton");
-			plusButton.addEventListener("click", function (){
-											 
-				
-					if(sum1 != "")	{
-					document.getElementById("sum1").innerHTML = sum;
-			document.getElementById('sum1').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 ==sum ){
-					document.getElementById("sum2").innerHTML = sum;
-			document.getElementById('sum2').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 == sum && sum2 == sum ) {
-					document.getElementById("sum3").innerHTML = sum;
-			document.getElementById('sum3').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-					
-					}else if(sum1 == sum && sum2 == sum && sum3 == sum ) {
-					document.getElementById("sum4").innerHTML = sum;
-			document.getElementById('sum4').style.color = "red";
-
-				document.getElementById('win1').innerHTML = "";
-						+
-					
-					}
-		} 
-												 
-												 
-												 
-												 
-			/*{
+			plusButton.addEventListener("click", function () {
 
 				document.getElementById("sum4").innerHTML = sum;
 				document.getElementById("sum4").style.color = "black";
 				document.getElementById('win1').innerHTML = "";
-			}*/
-												
-			);
+			});
 		} else if (kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black") {
 
 			document.getElementById('win1').innerHTML = "";
 		};
 	}
 
-	
-	
+
 	/*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/
 
 
@@ -385,9 +251,7 @@ function bingo() {
 
 	/*
 	plusButton.addEventListener("click", function () {
-
 		document.getElementById("sum1").innerHTML = '5';
-
 		//win1.value = "";
 	});
 	*/

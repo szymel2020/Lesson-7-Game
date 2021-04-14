@@ -179,6 +179,10 @@ footer {
 		
 	}
 	
+	#sum1, #sum2, #sum3, #sum4 {
+		background-color: cornflowerblue;
+	}
+	
 	#numer, #numer1, #numer2 {
 		flex-direction: column;
 		float: none;

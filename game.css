@@ -170,6 +170,24 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 1124px) {
+	.sum0 {
+		flex-direction: column;
+		margin-left: auto;
+		
+	}
+	
+	.firstButton, #words {
+		display: none;
+	}
+	section, #win1, #win2, #win3, #win4 {
+	font-family:  'Share Tech Mono', monospace;
+	float: none;
+		flex-wrap: wrap;
+	margin: auto;
+	font-size: 2em;
+}
+}
 
 
 

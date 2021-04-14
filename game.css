@@ -106,8 +106,8 @@ h2 {
 
 #win1, #win2, #win3, #win4 {
 	font-family:  'Share Tech Mono', monospace;
-	float: left;
-	margin: .5em;
+	flex-direction: row;
+	flex: auto;
 	font-size: 2em;
 }
 
@@ -168,25 +168,40 @@ footer {
 	img {
 		display: none;
 	}
+	
 }
 
 @media only screen and (max-width: 1124px) {
 	.sum0 {
-		flex-direction: column;
-		margin-left: auto;
+		flex-direction: row;
+		margin-left: 0;
 		
+		
+	}
+	
+	#numer, #numer1, #numer2 {
+		flex-direction: column;
+		float: none;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: aqua;
+	margin: 10px;
+	line-height: 90px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.9em;
+	color: red;
+	font-family: 'Share Tech Mono', monospace;
+	}
+	.how, #numer, #numer1, #numer2 {
+		flex-direction: row;
 	}
 	
 	.firstButton, #words {
 		display: none;
 	}
-	section, #win1, #win2, #win3, #win4 {
-	font-family:  'Share Tech Mono', monospace;
-	float: none;
-		flex-wrap: wrap;
-	margin: auto;
-	font-size: 2em;
-}
+	
 }
 
 

@@ -112,7 +112,7 @@ h2 {
 }
 #win1 {
 	background-color:antiquewhite;
-	width: 3em;
+	width: 11em;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -175,6 +175,9 @@ footer {
 	img {
 		display: none;
 	}
+	#partPoints {
+		flex-direction: column;
+	}
 	
 	a{
 		flex-wrap: nowrap;
@@ -205,10 +208,17 @@ footer {
 	#sum1, #sum2, #sum3, #sum4 {
 		background-color: cornflowerblue;
 	}
+	#win2, #win3, #win4 {
+		flex-direction: column;
+	
+	}
 	
 	#numer, #numer1, #numer2 {
-		flex-direction: column;
-		float: none;
+		display: flex;
+		flex-direction: row;
+		float:right;
+		align-items:center;
+		justify-content: center;
 	width: 90px;
 	height: 90px;
 	border-radius: 50%;

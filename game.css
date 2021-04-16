@@ -190,6 +190,8 @@ footer {
 	height: auto;
 	margin: auto;
 	font-family: 'DotGothic16', sans-serif;
+		color:antiquewhite;
+		text-shadow: 13px 13px red, 23px 23px black;
 	}
 	#namePlayer {
 		flex-direction: column;

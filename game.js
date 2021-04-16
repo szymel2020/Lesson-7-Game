@@ -187,6 +187,8 @@ function bingo() {
 	var sum2 = document.getElementById("sum2");
 	var sum3 = document.getElementById("sum3");
 	var sum4 = document.getElementById("sum4");
+	var a = document.getElementById("a");
+	
 	/*if(kulka.style.backgroundColor ==  kulka1.style.backgroundColor && kulka.style.backgroundColor  == kulka2.style.backgroundColor  )*/
 	if (kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red") {
 		var sum = 4 + 4 + 4;
@@ -234,11 +236,22 @@ function bingo() {
 				document.getElementById("sum4").innerHTML = sum;
 				document.getElementById("sum4").style.color = "black";
 				document.getElementById('win1').innerHTML = "";
+				
 			});
 		} else if (kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black") {
 
 			document.getElementById('win1').innerHTML = "";
 		};
+		plusButton.addEventListener("click", function () {
+			if(sum1 != "
+			"  && sum2 != "
+			"  && sum3 != "
+			"  && sum4 != "
+			" )&&
+				document.getElementById('a').innerHTML = "win";
+			}
+		})
+	
 	}
 
 

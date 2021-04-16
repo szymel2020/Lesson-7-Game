@@ -11,6 +11,7 @@ img {
 }
 
 a {
+	color:crimson;
 	display: flex;
 	align-items: center;
 	justify-content: center;

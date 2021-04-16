@@ -210,13 +210,13 @@ footer {
 	}
 	#win2, #win3, #win4 {
 		flex-direction: column;
-	
+		float: left;
 	}
 	
 	#numer, #numer1, #numer2 {
 		display: flex;
-		flex-direction: row;
-		float:right;
+		flex-direction: column;
+		
 		align-items:center;
 		justify-content: center;
 	width: 90px;

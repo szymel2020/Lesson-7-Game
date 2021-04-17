@@ -45,6 +45,7 @@ const wybieranie = function () {
 }
 const kulka = document.querySelector("#numer");
 kulka.addEventListener("click", wybieranie)
+kulka.addEventListener("touchstart", wybieranie)
 
 
 // funkcja losowania litery dla 'kulki1'
@@ -241,18 +242,10 @@ function bingo() {
 		} else if (kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black") {
 
 			document.getElementById('win1').innerHTML = "";
-		};
-		plusButton.addEventListener("click", function () {
-			if(sum1 != "
-			"  && sum2 != "
-			"  && sum3 != "
-			"  && sum4 != "
-			" )&&
-				document.getElementById('a').innerHTML = "win";
-			}
-		})
+		} 
+		
 	
-	}
+	};
 
 
 	/*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/

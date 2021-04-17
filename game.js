@@ -230,10 +230,12 @@ function bingo() {
 	} else if (kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black") {
 		var sum = 6 + 6 + 6;
 		document.getElementById('win1').innerHTML = sum;
+		var a2 = document.getElementById('a2');
 		var plusButton = document.getElementById("plusButton");
 		plusButton.addEventListener("click", function () {
 
 			document.getElementById("sum4").innerHTML = sum;
+			document.getElementById('a2').innerHTML = "i";
 			document.getElementById("sum4").style.color = "black";
 			document.getElementById('win1').innerHTML = "";
 

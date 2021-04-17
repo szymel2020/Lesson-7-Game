@@ -206,6 +206,7 @@ function bingo() {
 	} else if (kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow") {
 		var sum = 2 + 2 + 2;
 		document.getElementById('win1').innerHTML = sum;
+		var a4 = document.getElementById('a4');
 		var plusButton = document.getElementById("plusButton");
 		plusButton.addEventListener("click", function ()
 
@@ -213,6 +214,7 @@ function bingo() {
 
 				document.getElementById("sum2").innerHTML = sum;
 				document.getElementById("sum2").style.color = "yellow";
+				document.getElementById("a4").innerHTML = "!";
 				document.getElementById('win1').innerHTML = "";
 			});
 	} else if (kulka.style.backgroundColor == "green" && kulka1.style.backgroundColor == "green" && kulka2.style.backgroundColor == "green") {

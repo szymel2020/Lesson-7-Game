@@ -192,14 +192,14 @@ function bingo() {
 	if (kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red") {
 		var sum = 4 + 4 + 4;
 		document.getElementById('win1').innerHTML = sum;
-		
+		var a3 = document.getElementById('a3');
 		var plusButton = document.getElementById("plusButton");
 		plusButton.addEventListener("click", function ()
 
 			{
 				document.getElementById("sum1").innerHTML = sum;
 				document.getElementById('sum1').style.color = "red";
-
+				document.getElementById('a3').innerHTML = "n";
 				document.getElementById('win1').innerHTML = "";
 			});
 

@@ -1,5 +1,3 @@
-
-
 //tworzenie funkcji anonimowej przypisanej do zmiennej 'wybieranie'
 
 const wybieranie = function () {
@@ -189,75 +187,74 @@ function bingo() {
 	var sum3 = document.getElementById("sum3");
 	var sum4 = document.getElementById("sum4");
 	var a = document.getElementById("a");
-	
+
 	/*if(kulka.style.backgroundColor ==  kulka1.style.backgroundColor && kulka.style.backgroundColor  == kulka2.style.backgroundColor  )*/
 	if (kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red") {
 		var sum = 4 + 4 + 4;
 		document.getElementById('win1').innerHTML = sum;
-
+		
 		var plusButton = document.getElementById("plusButton");
 		plusButton.addEventListener("click", function ()
 
 			{
 				document.getElementById("sum1").innerHTML = sum;
-			document.getElementById('sum1').style.color = "red";
+				document.getElementById('sum1').style.color = "red";
 
 				document.getElementById('win1').innerHTML = "";
 			});
 
-		}
-		else if (kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow") {
-			var sum = 2 + 2 + 2;
-			document.getElementById('win1').innerHTML = sum;
-			var plusButton = document.getElementById("plusButton");
-			plusButton.addEventListener("click", function ()
+	} else if (kulka.style.backgroundColor == "yellow" && kulka1.style.backgroundColor == "yellow" && kulka2.style.backgroundColor == "yellow") {
+		var sum = 2 + 2 + 2;
+		document.getElementById('win1').innerHTML = sum;
+		var plusButton = document.getElementById("plusButton");
+		plusButton.addEventListener("click", function ()
 
-				{
+			{
 
-					document.getElementById("sum2").innerHTML = sum;
-					document.getElementById("sum2").style.color = "yellow";
-					document.getElementById('win1').innerHTML = "";
-				});
-		} else if (kulka.style.backgroundColor == "green" && kulka1.style.backgroundColor == "green" && kulka2.style.backgroundColor == "green") {
-			var sum = 8 + 8 + 8;
-			document.getElementById('win1').innerHTML = sum;
-			var plusButton = document.getElementById("plusButton");
-			plusButton.addEventListener("click", function () {
-
-				document.getElementById("sum3").innerHTML = sum;
-				document.getElementById("sum3").style.color = "green";
+				document.getElementById("sum2").innerHTML = sum;
+				document.getElementById("sum2").style.color = "yellow";
 				document.getElementById('win1').innerHTML = "";
 			});
-		} else if (kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black") {
-			var sum = 6 + 6 + 6;
-			document.getElementById('win1').innerHTML = sum;
-			var plusButton = document.getElementById("plusButton");
-			plusButton.addEventListener("click", function () {
+	} else if (kulka.style.backgroundColor == "green" && kulka1.style.backgroundColor == "green" && kulka2.style.backgroundColor == "green") {
+		var sum = 8 + 8 + 8;
+		document.getElementById('win1').innerHTML = sum;
+		var a1 = document.getElementById('a1');
+		var plusButton = document.getElementById("plusButton");
+		plusButton.addEventListener("click", function () {
 
-				document.getElementById("sum4").innerHTML = sum;
-				document.getElementById("sum4").style.color = "black";
-				document.getElementById('win1').innerHTML = "";
-				
-			});
-		} else if (kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black") {
-
+			document.getElementById("sum3").innerHTML = sum;
+			document.getElementById('a1').innerHTML = "w";
+			document.getElementById("sum3").style.color = "green";
 			document.getElementById('win1').innerHTML = "";
-		} 
-		
-	
-	};
+		});
+	} else if (kulka.style.backgroundColor == "black" && kulka1.style.backgroundColor == "black" && kulka2.style.backgroundColor == "black") {
+		var sum = 6 + 6 + 6;
+		document.getElementById('win1').innerHTML = sum;
+		var plusButton = document.getElementById("plusButton");
+		plusButton.addEventListener("click", function () {
+
+			document.getElementById("sum4").innerHTML = sum;
+			document.getElementById("sum4").style.color = "black";
+			document.getElementById('win1').innerHTML = "";
+
+		});
+	} else if (kulka.style.backgroundColor != "black" || kulka1.style.backgroundColor != "black" || kulka2.style.backgroundColor != "black") {
+
+		document.getElementById('win1').innerHTML = "";
+	}
+
+};
 
 
-	/*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/
+/*if(kulka.style.backgroundColor == "red" && kulka1.style.backgroundColor == "red" && kulka2.style.backgroundColor == "red" )*/
 
 
+		//var win1 = document.getElementById("54");
 
-	//var win1 = document.getElementById("54");
 
-
-	/*
-	plusButton.addEventListener("click", function () {
-		document.getElementById("sum1").innerHTML = '5';
-		//win1.value = "";
-	});
-	*/
+		/*
+		plusButton.addEventListener("click", function () {
+			document.getElementById("sum1").innerHTML = '5';
+			//win1.value = "";
+		});
+		*/
